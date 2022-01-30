@@ -1,0 +1,15 @@
+{
+    "plugins": [
+        "stylelint-order",
+        "stylelint-scss"
+    ],
+    "defaultSeverity": "error",
+    "extends": [
+        "./config/stylelint/order",
+        "./config/stylelint/scss",
+        "./config/stylelint/recommended"
+    ],
+    "rules": {
+        "comment-whitespace-inside": null
+    }
+}

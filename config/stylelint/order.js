@@ -1,0 +1,356 @@
+// compatible with stylelint-order version 4.1.0
+module.exports = {
+    rules: {
+        'order/order': [
+            'custom-properties',
+            'dollar-variables',
+            {
+                type: 'at-rule',
+                name: 'mixin',
+            },
+            {
+                type: 'at-rule',
+                name: 'include',
+            },
+            {
+                type: 'at-rule',
+                name: 'keyframes',
+            },
+            'declarations',
+            'rules',
+            {
+                type: 'at-rule',
+                name: 'media',
+            },
+        ],
+        'order/properties-order': [
+            [
+                {
+                    properties: ['position', 'z-index', 'top', 'right', 'bottom', 'left'],
+                },
+                {
+                    properties: ['display'],
+                },
+                {
+                    properties: [
+                        'grid-template-columns',
+                        'grid-template-rows',
+                        'grid-template-areas',
+                        'grid-template',
+                        'grid-column-gap',
+                        'grid-row-gap',
+                        'grid-gap',
+                        'justify-items',
+                        'align-items',
+                        'justify-content',
+                        'align-content',
+                        'grid-auto-columns',
+                        'grid-auto-rows',
+                        'grid-auto-flow',
+                        'grid',
+                    ],
+                },
+                {
+                    properties: [
+                        'flex-flow',
+                        'flex-direction',
+                        'flex-wrap',
+                        'justify-content',
+                        'align-items',
+                        'align-content',
+                    ],
+                },
+                {
+                    properties: ['float', 'clear'],
+                },
+                {
+                    properties: ['vertical-align'],
+                },
+                {
+                    properties: ['overflow', 'overflow-x', 'overflow-y'],
+                },
+                {
+                    properties: [
+                        'grid-column-start',
+                        'grid-column-end',
+                        'grid-row-start',
+                        'grid-row-end',
+                        'grid-column',
+                        'grid-row',
+                        'grid-area',
+                        'justify-self',
+                        'align-self',
+                    ],
+                },
+                {
+                    properties: [
+                        'order',
+                        'flex',
+                        'flex-grow',
+                        'flex-shrink',
+                        'flex-basis',
+                        'align-self',
+                    ],
+                },
+                {
+                    properties: [
+                        'columns',
+                        'column-width',
+                        'column-count',
+                        'column-gap',
+                        'column-rule-color',
+                        'column-rule-style',
+                        'column-rule-width',
+                        'column-rule',
+                        'break-before',
+                        'break-after',
+                        'break-inside',
+                        'column-span',
+                        'column-fill',
+                    ],
+                },
+                {
+                    properties: ['box-sizing'],
+                },
+                {
+                    properties: [
+                        'min-width',
+                        'max-width',
+                        'width',
+                        'min-height',
+                        'max-height',
+                        'height',
+                        'margin',
+                        'margin-top',
+                        'margin-right',
+                        'margin-bottom',
+                        'margin-left',
+                        'padding',
+                        'padding-top',
+                        'padding-right',
+                        'padding-bottom',
+                        'padding-left',
+                    ],
+                },
+                {
+                    properties: [
+                        'table-layout',
+                        'border-collapse',
+                        'border-spacing',
+                        'caption-side',
+                        'empty-cells',
+                    ],
+                },
+                {
+                    properties: [
+                        'list-style',
+                        'list-style-type',
+                        'list-style-position',
+                        'list-style-image',
+                    ],
+                },
+                {
+                    properties: [
+                        'content',
+                        'quotes',
+                        'counter-reset',
+                        'counter-set',
+                        'counter-increment',
+                    ],
+                },
+                {
+                    properties: [
+                        'outline',
+                        'outline-width',
+                        'outline-style',
+                        'outline-color',
+                        'outline-offset',
+                    ],
+                },
+                {
+                    properties: [
+                        'border',
+                        'border-width',
+                        'border-style',
+                        'border-color',
+                        'border-top',
+                        'border-top-width',
+                        'border-top-style',
+                        'border-top-color',
+                        'border-right',
+                        'border-right-width',
+                        'border-right-style',
+                        'border-right-color',
+                        'border-bottom',
+                        'border-bottom-width',
+                        'border-bottom-style',
+                        'border-bottom-color',
+                        'border-left',
+                        'border-left-width',
+                        'border-left-style',
+                        'border-left-color',
+                        'border-radius',
+                        'border-top-left-radius',
+                        'border-top-right-radius',
+                        'border-bottom-right-radius',
+                        'border-bottom-left-radius',
+                    ],
+                },
+                {
+                    properties: [
+                        'background',
+                        'background-attachment',
+                        'background-clip',
+                        'background-color',
+                        'background-image',
+                        'background-image-transform',
+                        'background-origin',
+                        'background-position',
+                        'background-repeat',
+                        'background-size',
+                    ],
+                },
+                {
+                    properties: ['object-fit', 'object-position'],
+                },
+                {
+                    properties: [
+                        'clip',
+                        'clip-path',
+                        'mask',
+                        'mask-image',
+                        'mask-mode',
+                        'mask-repeat',
+                        'mask-position',
+                        'mask-clip',
+                        'mask-origin',
+                        'mask-size',
+                        'mask-composite',
+                    ],
+                },
+                {
+                    properties: ['box-shadow'],
+                },
+                {
+                    properties: ['color', 'opacity'],
+                },
+                {
+                    properties: ['visibility'],
+                },
+                {
+                    properties: ['filter'],
+                },
+                {
+                    properties: ['fill'],
+                },
+                {
+                    properties: ['direction'],
+                },
+                {
+                    properties: [
+                        'text-transform',
+                        'white-space',
+                        'word-break',
+                        'line-break',
+                        'hyphens',
+                        'overflow-wrap',
+                        'word-wrap',
+                        'text-align',
+                        'text-justify',
+                        'word-spacing',
+                        'letter-spacing',
+                        'text-indent',
+                    ],
+                },
+                {
+                    properties: [
+                        'text-decoration',
+                        'text-decoration-line',
+                        'text-decoration-style',
+                        'text-decoration-color',
+                        'text-decoration-skip',
+                        'text-underline-position',
+                        'text-emphasis',
+                        'text-emphasis-style',
+                        'text-emphasis-color',
+                        'text-emphasis-position',
+                        'text-shadow',
+                    ],
+                },
+                {
+                    properties: ['text-overflow'],
+                },
+                {
+                    properties: [
+                        'font',
+                        'font-style',
+                        'font-weight',
+                        'font-stretch',
+                        'font-size',
+                        'line-height',
+                        'font-family',
+                        'font-size-adjust',
+                    ],
+                },
+                {
+                    properties: [
+                        'transform',
+                        'transform-origin',
+                        'transform-style',
+                        'perspective',
+                        'perspective-origin',
+                        'backface-visibility',
+                    ],
+                },
+                {
+                    properties: [
+                        'animation',
+                        'animation-name',
+                        'animation-duration',
+                        'animation-timing-function',
+                        'animation-iteration-count',
+                        'animation-direction',
+                        'animation-play-state',
+                        'animation-delay',
+                        'animation-fill-mode',
+                    ],
+                },
+                {
+                    properties: [
+                        'transition',
+                        'transition-property',
+                        'transition-duration',
+                        'transition-timing-function',
+                        'transition-delay',
+                    ],
+                },
+                {
+                    properties: ['contain', 'will-change'],
+                },
+                {
+                    properties: ['appearance'],
+                },
+                {
+                    properties: ['resize'],
+                },
+                {
+                    properties: ['cursor', 'user-select'],
+                },
+                {
+                    properties: [
+                        'pointer-events',
+                        'touch-action',
+                        '-webkit-overflow-scrolling',
+                        '-webkit-touch-callout',
+                        '-webkit-tap-highlight-color',
+                    ],
+                },
+            ],
+            {
+                unspecified: 'bottom',
+                severity: 'error',
+            },
+        ],
+        'order/properties-alphabetical-order': null,
+    },
+};
